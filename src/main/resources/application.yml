@@ -1,0 +1,24 @@
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/osahaneat
+    username: root
+    password: Trongvadiep@123
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+    servlet:
+      multipart:
+        max-file-size: 10MB
+
+jwt:
+  privateKey: MrJvS1fJk2JcAMXEcOxd7erAb4hnXL/opR57F7jUG56mmK7gQRNVUiZ0QP+f2cu6DJI0vMBEDs4aU2O57P1YyQ==
+  expiration: 3600 # expiration time in seconds, adjust as needed
+
+
+fileUpload:
+  rootPath: D:\Frontend\OsahaneatProject\Osahaneat\src\assets\images
+
